@@ -14,14 +14,14 @@ namespace MiKeyboard
     public partial class Main : Form
     {
         KeyboardController keyboard;
-        PluginController plugins;
+        EffectController plugins;
 
         public Main()
         {
             InitializeComponent();
 
             keyboard = new KeyboardController(this);
-            plugins = new PluginController(this);
+            plugins = new EffectController(this);
         }
     }
 }
