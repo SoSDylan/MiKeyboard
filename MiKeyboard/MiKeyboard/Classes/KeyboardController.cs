@@ -3,16 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CUE.NET;
+using CUE.NET.Devices.Keyboard;
+using CUE.NET.Devices.Generic.EventArgs;
+using CUE.NET.Exceptions;
+using CUE.NET.Devices.Generic.Enums;
 
 namespace MiKeyboard.Classes
 {
-    class KeyboardController
+    internal class KeyboardController
     {
-        Main main;
+        internal Main main;
 
-        public KeyboardController(Main main)
+        internal CorsairKeyboard keyboard;
+
+        internal KeyboardController(Main main)
         {
             this.main = main;
+
+            CueSDK.Initialize();
+            keyboard = CueSDK.KeyboardSDK;
+
+            if (keyboard == null)
+                throw new WrapperException("No keyboard found...");
+
+            keyboard.Updating += (sender, args) => UpdateKeyboard();
+        }
+
+        internal void Setup()
+        {
+            keyboard.UpdateMode = UpdateMode.Continuous;
+        }
+
+        private void UpdateKeyboard()
+        {
+            main.effectController.UpdateKeyboard();
+            //keyboard.Update();
         }
     }
 }

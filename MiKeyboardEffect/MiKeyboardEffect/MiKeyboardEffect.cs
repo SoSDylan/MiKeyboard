@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MiKeyboard;
+using CUE.NET.Devices.Keyboard;
+using CUE.NET.Devices.Keyboard.Enums;
+using System.Drawing;
+using System.IO;
 
 namespace MiKeyboardEffect
 {
@@ -59,8 +63,10 @@ namespace MiKeyboardEffect
             return true;
         }
 
-        public void LightingUpdate()
+        public void LightingUpdate(ref CorsairKeyboard keyboard)
         {
+            keyboard['A'].Led.Color = Color.Red;
+            keyboard[CorsairKeyboardKeyId.B].Led.Color = Color.Green;
         }
     }
 }

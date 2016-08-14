@@ -5,3 +5,5 @@ F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Debug\IEffect.pdb
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\obj\Debug\MiKeyboardEffect.dll
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\obj\Debug\MiKeyboardEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Debug\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Debug\CUE.NET.pdb

@@ -2,3 +2,6 @@ F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Debug\IEffect.dll
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Debug\IEffect.pdb
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\obj\Debug\IEffect.dll
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\obj\Debug\IEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Debug\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Debug\CUE.NET.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\obj\Debug\IEffect.csprojResolveAssemblyReference.cache

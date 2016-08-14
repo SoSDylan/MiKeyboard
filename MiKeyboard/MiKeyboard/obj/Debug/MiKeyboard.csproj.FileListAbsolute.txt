@@ -9,3 +9,5 @@ F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKey
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.pdb
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\IEffect.dll
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\IEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\CUE.NET.pdb

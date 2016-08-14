@@ -13,22 +13,31 @@ namespace MiKeyboard
 {
     public partial class Main : Form
     {
-        KeyboardController keyboardController;
-        EffectController effectConstoller;
+        internal KeyboardController keyboardController;
+        internal EffectController effectController;
 
-        public Main()
+        internal Main()
         {
             InitializeComponent();
 
             keyboardController = new KeyboardController(this);
-            effectConstoller = new EffectController(this);
+            effectController = new EffectController(this);
+
+            keyboardController.Setup();
+            effectController.Setup();
 
             UpdateScreen();
         }
 
         private void UpdateScreen()
         {
-            effectConstoller.effects.ForEach(t => cb_effects.Items.Add(t.Name));
+            effectController.effects.ForEach(t => cb_effects.Items.Add(t.Name));
+            cb_effects.SelectedIndex = 0;
+        }
+
+        private void cb_effects_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            effectController.selectedEffect = cb_effects.SelectedIndex;
         }
     }
 }

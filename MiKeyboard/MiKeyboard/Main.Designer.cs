@@ -39,6 +39,7 @@
             this.cb_effects.Name = "cb_effects";
             this.cb_effects.Size = new System.Drawing.Size(259, 21);
             this.cb_effects.TabIndex = 0;
+            this.cb_effects.SelectedIndexChanged += new System.EventHandler(this.cb_effects_SelectedIndexChanged);
             // 
             // Main
             // 

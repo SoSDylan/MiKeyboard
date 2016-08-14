@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CUE.NET.Devices.Keyboard;
+using System;
 
 namespace MiKeyboard
 {
@@ -13,6 +14,6 @@ namespace MiKeyboard
         Boolean OnLoad();
         Boolean OnUnload();
 
-        void LightingUpdate();
+        void LightingUpdate(ref CorsairKeyboard keyboard);
     }
 }
