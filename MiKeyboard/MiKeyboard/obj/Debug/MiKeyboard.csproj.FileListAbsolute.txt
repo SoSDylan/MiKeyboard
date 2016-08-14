@@ -1,0 +1,9 @@
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\MiKeyboard.exe.config
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\MiKeyboard.exe
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\MiKeyboard.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.csprojResolveAssemblyReference.cache
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.Main.resources
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.Properties.Resources.resources
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.csproj.GenerateResource.Cache
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.exe
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.pdb
