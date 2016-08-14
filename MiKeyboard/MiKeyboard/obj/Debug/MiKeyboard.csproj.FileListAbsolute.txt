@@ -7,3 +7,5 @@ F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKey
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.csproj.GenerateResource.Cache
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.exe
 F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\obj\Debug\MiKeyboard.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\IEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboard\MiKeyboard\bin\Debug\IEffect.pdb

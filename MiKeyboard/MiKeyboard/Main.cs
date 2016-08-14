@@ -13,15 +13,22 @@ namespace MiKeyboard
 {
     public partial class Main : Form
     {
-        KeyboardController keyboard;
-        EffectController plugins;
+        KeyboardController keyboardController;
+        EffectController effectConstoller;
 
         public Main()
         {
             InitializeComponent();
 
-            keyboard = new KeyboardController(this);
-            plugins = new EffectController(this);
+            keyboardController = new KeyboardController(this);
+            effectConstoller = new EffectController(this);
+
+            UpdateScreen();
+        }
+
+        private void UpdateScreen()
+        {
+            effectConstoller.effects.ForEach(t => cb_effects.Items.Add(t.Name));
         }
     }
 }

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}</ProjectGuid>
+    <ProjectGuid>{7E64D899-296E-42A9-9041-79530B13ED81}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MiKeyboardEffect</RootNamespace>
-    <AssemblyName>MiKeyboardEffect</AssemblyName>
+    <RootNamespace>IEffect</RootNamespace>
+    <AssemblyName>IEffect</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,19 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MiKeyboardEffect.cs" />
+    <Compile Include="IEffect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\IEffect\IEffect.csproj">
-      <Project>{7e64d899-296e-42a9-9041-79530b13ed81}</Project>
-      <Name>IEffect</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) $(ProjectDir)\..\..\MiKeyboard\MiKeyboard\bin\Debug\Effects\</PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

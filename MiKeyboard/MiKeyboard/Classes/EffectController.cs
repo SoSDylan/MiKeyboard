@@ -23,12 +23,11 @@ namespace MiKeyboard.Classes
 
         public void LoadEffectList()
         {
-            Directory.CreateDirectory("./Effects/");
-            String[] files = Directory.GetFiles("./Effects/", "*.dll");
+            Directory.CreateDirectory(".\\Effects\\");
+            String[] files = Directory.GetFiles("Effects\\", "*.dll");
             foreach (var s in files)
                 LoadEffect(Path.Combine(Environment.CurrentDirectory, s));
-            Console.WriteLine("Effects loaded:");
-            effects.ForEach(t => Console.WriteLine(t.Name + " - " + t.Author + " - " + t.Version));
+            effects.ForEach(t => Console.WriteLine("Loaded " + t.Name + " " + t.Version + " by " + t.Author));
         }
 
         public void LoadEffect(String file)
@@ -52,14 +51,7 @@ namespace MiKeyboard.Classes
             try
             {
                 Type[] types = asm.GetTypes();
-                Assembly core = AppDomain.CurrentDomain.GetAssemblies().Single(x => x.GetName().Name.Equals("Lab.Core"));
-                Type type = core.GetType("Lab.Core.IEffect");
-                foreach (var t in types)
-                    if (type.IsAssignableFrom((Type)t))
-                    {
-                        effectInfo = t;
-                        break;
-                    }
+                effectInfo = types[0];
 
                 if (effectInfo != null)
                 {

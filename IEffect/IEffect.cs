@@ -1,13 +1,14 @@
 ﻿using System;
 
-namespace MiKeyboard.Classes
+namespace MiKeyboard
 {
-    internal interface IEffect
+    public interface IEffect
     {
         String Name { get; }
         String Description { get; }
-        String Version { get; }
         String Author { get; }
+        String Version { get; }
+        long Build { get; }
 
         Boolean OnLoad();
         Boolean OnUnload();

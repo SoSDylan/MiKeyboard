@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiKeyboard", "MiKeyboard\MiKeyboard.csproj", "{508C8F67-E47B-44D9-A91E-20251861BF31}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5} = {AAA9875C-D586-4E4F-BA45-5FC340BB50C5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEffect", "..\IEffect\IEffect.csproj", "{7E64D899-296E-42A9-9041-79530B13ED81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiKeyboardEffect", "..\MiKeyboardEffect\MiKeyboardEffect\MiKeyboardEffect.csproj", "{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{508C8F67-E47B-44D9-A91E-20251861BF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{508C8F67-E47B-44D9-A91E-20251861BF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{508C8F67-E47B-44D9-A91E-20251861BF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E64D899-296E-42A9-9041-79530B13ED81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E64D899-296E-42A9-9041-79530B13ED81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E64D899-296E-42A9-9041-79530B13ED81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E64D899-296E-42A9-9041-79530B13ED81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

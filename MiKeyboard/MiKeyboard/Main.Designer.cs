@@ -28,20 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cb_effects = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // Form1
+            // cb_effects
+            // 
+            this.cb_effects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_effects.FormattingEnabled = true;
+            this.cb_effects.Location = new System.Drawing.Point(13, 13);
+            this.cb_effects.Name = "cb_effects";
+            this.cb_effects.Size = new System.Drawing.Size(259, 21);
+            this.cb_effects.TabIndex = 0;
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "Form1";
+            this.Controls.Add(this.cb_effects);
+            this.Name = "Main";
             this.Text = "MiKeyboard";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox cb_effects;
     }
 }
 
