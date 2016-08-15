@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using CUE.NET;
 using CUE.NET.Devices.Keyboard;
+using CUE.NET.Devices.Generic.Enums;
 using CUE.NET.Devices.Generic.EventArgs;
 using CUE.NET.Exceptions;
-using CUE.NET.Devices.Generic.Enums;
 
 namespace MiKeyboard.Classes
 {
@@ -21,7 +21,8 @@ namespace MiKeyboard.Classes
         {
             this.main = main;
 
-            CueSDK.Initialize();
+            if (!CueSDK.IsInitialized)
+                CueSDK.Initialize();
             keyboard = CueSDK.KeyboardSDK;
 
             if (keyboard == null)

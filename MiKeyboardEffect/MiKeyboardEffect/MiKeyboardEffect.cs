@@ -45,6 +45,14 @@ namespace MiKeyboardEffect
             }
         }
 
+        public string BundleId
+        {
+            get
+            {
+                return "com.test.mikeyboardeffect";
+            }
+        }
+
         public long Build
         {
             get

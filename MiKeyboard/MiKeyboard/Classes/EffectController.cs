@@ -59,7 +59,16 @@ namespace MiKeyboard.Classes
             try
             {
                 Type[] types = asm.GetTypes();
-                effectInfo = types[0];
+                //Assembly core = AppDomain.CurrentDomain.GetAssemblies().Single(x => x.GetName().Name.Equals("MiKeyboard"));
+                //for (int i = 0; i < core.GetTypes().Length; i++)
+                //    Console.WriteLine(core.GetTypes()[i].FullName);
+                Type type = typeof(IEffect);//core.GetType("MiKeyboard.Main");
+                foreach (var t in types)
+                    if (type.IsAssignableFrom((Type)t))
+                    {
+                        effectInfo = t;
+                        break;
+                    }
 
                 if (effectInfo != null)
                 {
@@ -71,6 +80,17 @@ namespace MiKeyboard.Classes
             }
             catch (Exception)
             {
+            }
+        }
+
+        private IEnumerable<Type> GetTypesWithSpecificAttribute<T>(Assembly assembly)
+        {
+            foreach (Type type in assembly.GetTypes())
+            {
+                if (type.GetCustomAttributes(typeof(T), true).Length > 0)
+                {
+                    yield return type;
+                }
             }
         }
 

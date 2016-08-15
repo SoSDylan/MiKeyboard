@@ -9,6 +9,7 @@ namespace MiKeyboard
         String Description { get; }
         String Author { get; }
         String Version { get; }
+        String BundleId { get; }
         long Build { get; }
 
         Boolean OnLoad();
