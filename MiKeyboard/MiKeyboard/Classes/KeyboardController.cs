@@ -23,6 +23,8 @@ namespace MiKeyboard.Classes
 
             if (!CueSDK.IsInitialized)
                 CueSDK.Initialize();
+            else
+                CueSDK.Reinitialize();
             keyboard = CueSDK.KeyboardSDK;
 
             if (keyboard == null)

@@ -5,15 +5,18 @@ namespace MiKeyboard
 {
     public interface IEffect
     {
-        String Name { get; }
-        String Description { get; }
-        String Author { get; }
-        String Version { get; }
-        String BundleId { get; }
+        string Name { get; }
+        string Description { get; }
+        string Author { get; }
+        string Version { get; }
+        string BundleId { get; }
         long Build { get; }
 
-        Boolean OnLoad();
-        Boolean OnUnload();
+        string[] Tabs { get; }
+        Item[] Items { get; }
+
+        bool OnLoad();
+        bool OnUnload();
 
         void LightingUpdate(ref CorsairKeyboard keyboard);
     }

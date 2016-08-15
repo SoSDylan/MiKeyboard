@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MiKeyboard.Classes;
 using MetroFramework.Forms;
+using MetroFramework.Controls;
+using MetroFramework;
 
 namespace MiKeyboard
 {
@@ -28,6 +30,16 @@ namespace MiKeyboard
             effectController.Setup();
 
             UpdateScreen();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            
+            if (e.CloseReason != CloseReason.UserClosing) return;
+
+            e.Cancel = true;
+            Hide();
         }
 
         private void UpdateScreen()
@@ -53,16 +65,103 @@ namespace MiKeyboard
                     cb_effects.SelectedIndex = 0;
             }
 
-            int top = 50;
-            int left = 100;
-            for (int i = 0; i < 10; i++)
+            SetupEffectInterface();
+        }
+
+        private void SetupEffectInterface()
+        {
+            ResetInterface();
+
+            IEffect selectedEffect = effectController.effects[effectController.selectedEffect];
+            for (int i = 0; i < selectedEffect.Tabs.Length; i++)
             {
-                Button button = new Button();
-                button.Left = left;
-                button.Top = top;
-                this.Controls.Add(button);
-                top += button.Height + 2;
-                Console.WriteLine("Created button");
+                panel.TabPages.Add(selectedEffect.Tabs[i]);
+            }
+
+            for (int i = 0; i < selectedEffect.Items.Length; i++)
+            {
+                Item item = selectedEffect.Items[i];
+                switch (item.Type)
+                {
+                    case ItemType.Button:
+                        MetroButton button = new MetroButton();
+                        button.Left = item.Left;
+                        button.Top = item.Top;
+                        if (item.Width != 0)
+                            button.Width = item.Width;
+                        if (item.Height != 0)
+                            button.Height = item.Height;
+                        button.Text = item.Text;
+                        if (item.Event != null)
+                            button.Click += item.Event;
+                        //button.Theme = MetroThemeStyle.Dark;
+                        panel.TabPages[item.TabIndex].Controls.Add(button);
+                        break;
+                    case ItemType.ComboBox:
+                        MetroComboBox comboBox = new MetroComboBox();
+                        comboBox.Left = item.Left;
+                        comboBox.Top = item.Top;
+                        comboBox.Text = item.Text;
+                        comboBox.Items.AddRange(item.Items);
+                        comboBox.SelectedIndex = 0;
+                        if (item.Event != null)
+                            comboBox.SelectedIndexChanged += item.Event;
+                        //button.Theme = MetroThemeStyle.Dark;
+                        panel.TabPages[item.TabIndex].Controls.Add(comboBox);
+                        break;
+                    case ItemType.Label:
+                        MetroLabel label = new MetroLabel();
+                        label.Left = item.Left;
+                        label.Top = item.Top;
+                        label.Text = item.Text;
+                        //button.Theme = MetroThemeStyle.Dark;
+                        panel.TabPages[item.TabIndex].Controls.Add(label);
+                        break;
+                    case ItemType.RadioButton:
+                        MetroRadioButton radioButton = new MetroRadioButton();
+                        radioButton.Left = item.Left;
+                        radioButton.Top = item.Top;
+                        radioButton.Text = item.Text;
+                        radioButton.Checked = item.Selected;
+                        if (item.Event != null)
+                            radioButton.CheckedChanged += item.Event;
+                        //button.Theme = MetroThemeStyle.Dark;
+                        panel.TabPages[item.TabIndex].Controls.Add(radioButton);
+                        break;
+                    case ItemType.TextBox:
+                        MetroTextBox textBox = new MetroTextBox();
+                        textBox.Left = item.Left;
+                        textBox.Top = item.Top;
+                        if (item.Width != 0)
+                            textBox.Width = item.Width;
+                        if (item.Height != 0)
+                            textBox.Height = item.Height;
+                        textBox.Text = item.Text;
+                        if (item.Event != null)
+                            textBox.TextChanged += item.Event;
+                        //button.Theme = MetroThemeStyle.Dark;
+                        panel.TabPages[item.TabIndex].Controls.Add(textBox);
+                        break;
+                    case ItemType.ToggleButton:
+                        MetroToggle toggleButton = new MetroToggle();
+                        toggleButton.Left = item.Left;
+                        toggleButton.Top = item.Top;
+                        toggleButton.Text = item.Text;
+                        toggleButton.Checked = item.Selected;
+                        if (item.Event != null)
+                            toggleButton.CheckedChanged += item.Event;
+                        //button.Theme = MetroThemeStyle.Dark;
+                        panel.TabPages[item.TabIndex].Controls.Add(toggleButton);
+                        break;
+                }
+            }
+        }
+
+        private void ResetInterface()
+        {
+            for (int i = panel.TabCount - 1; i >= 0; i--)
+            {
+                panel.TabPages.RemoveAt(i);
             }
         }
 
@@ -81,6 +180,23 @@ namespace MiKeyboard
             
             keyboardController = new KeyboardController(this);
             keyboardController.Setup();
+
+            SetupEffectInterface();
+        }
+
+        private void csmi_show_Click(object sender, EventArgs e)
+        {
+            Show();
+        }
+
+        private void csmi_quit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
         }
     }
 }
