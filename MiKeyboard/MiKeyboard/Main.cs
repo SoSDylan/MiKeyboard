@@ -11,6 +11,8 @@ using MiKeyboard.Classes;
 using MetroFramework.Forms;
 using MetroFramework.Controls;
 using MetroFramework;
+using System.Diagnostics;
+using System.IO;
 
 namespace MiKeyboard
 {
@@ -28,6 +30,8 @@ namespace MiKeyboard
 
             keyboardController.Setup();
             effectController.Setup();
+
+            cb_effects.SelectedIndexChanged += new EventHandler(cb_effects_SelectedIndexChanged);
 
             UpdateScreen();
         }
@@ -197,6 +201,11 @@ namespace MiKeyboard
         private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             Show();
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Directory.GetCurrentDirectory() + "\\Effects\\");
         }
     }
 }

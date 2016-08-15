@@ -38,6 +38,7 @@
             this.csmi_show = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.csmi_quit = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.panel.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.cb_effects.ItemHeight = 23;
             this.cb_effects.Location = new System.Drawing.Point(168, 23);
             this.cb_effects.Name = "cb_effects";
-            this.cb_effects.Size = new System.Drawing.Size(228, 29);
+            this.cb_effects.Size = new System.Drawing.Size(193, 29);
             this.cb_effects.TabIndex = 1;
             this.cb_effects.UseSelectable = true;
             // 
@@ -114,11 +115,23 @@
             this.csmi_quit.Text = "Quit";
             this.csmi_quit.Click += new System.EventHandler(this.csmi_quit_Click);
             // 
+            // metroButton1
+            // 
+            this.metroButton1.BackgroundImage = global::MiKeyboard.Properties.Resources.folder;
+            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.metroButton1.Location = new System.Drawing.Point(367, 23);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(29, 29);
+            this.metroButton1.TabIndex = 3;
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 280);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.cb_effects);
             this.MaximizeBox = false;
@@ -142,6 +155,7 @@
         private System.Windows.Forms.ToolStripMenuItem csmi_show;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem csmi_quit;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
 
