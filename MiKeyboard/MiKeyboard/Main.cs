@@ -31,6 +31,7 @@ namespace MiKeyboard
             keyboardController.Setup();
             effectController.Setup();
 
+            GotFocus += new EventHandler(FormGotFocus);
             cb_effects.SelectedIndexChanged += new EventHandler(cb_effects_SelectedIndexChanged);
 
             UpdateScreen();
@@ -189,6 +190,12 @@ namespace MiKeyboard
             keyboardController.Setup();
 
             SetupEffectInterface();
+        }
+
+        private void FormGotFocus(object sender, EventArgs e)
+        {
+            //effectController.LoadEffectList();
+            //UpdateScreen();
         }
 
         private void csmi_show_Click(object sender, EventArgs e)

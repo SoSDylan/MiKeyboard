@@ -33,6 +33,7 @@ namespace MiKeyboard.Classes
         {
             Directory.CreateDirectory(".\\Effects\\");
             String[] files = Directory.GetFiles("Effects\\", "*.dll");
+            effects.Clear();
             foreach (var s in files)
                 LoadEffect(Path.Combine(Environment.CurrentDirectory, s));
             effects.ForEach(t => Console.WriteLine("Loaded " + t.Name + " " + t.Version + " by " + t.Author));

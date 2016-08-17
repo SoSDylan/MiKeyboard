@@ -1,0 +1,9 @@
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Release\RainbowEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Release\RainbowEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Release\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Release\IEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Release\MetroFramework.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Release\CUE.NET.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Release\IEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\obj\Release\RainbowEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\obj\Release\RainbowEffect.pdb
