@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MiKeyboardEffect
 {
-    public class MiKeyboardEffect : IEffect
+    public class MiKeyboardEffect : MiEffect
     {
         public string Name
         {
@@ -70,11 +70,11 @@ namespace MiKeyboardEffect
             }
         }
 
-        public Item[] Items
+        public MiItem[] Items
         {
             get
             {
-                return new Item[] { new Item(ItemType.Button, "Click Me", 0, 8, 8, new EventHandler(ButtonClick)), new Item(ItemType.ToggleButton, "Fast", 1, 8, 8, new EventHandler(FastToggleClick)) };
+                return new MiItem[] { new MiItem(ItemType.Button, "Click Me", 0, 8, 8, new EventHandler(ButtonClick)), new MiItem(ItemType.ToggleButton, "Fast", 1, 8, 8, new EventHandler(FastToggleClick)) };
             }
         }
 

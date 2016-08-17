@@ -13,7 +13,7 @@ using MetroFramework.Controls;
 
 namespace RainbowEffect
 {
-    public class RainbowEffect : IEffect
+    public class RainbowEffect : MiEffect
     {
         public string Name
         {
@@ -63,6 +63,14 @@ namespace RainbowEffect
             }
         }
 
+        public int UpdatesPerSecond
+        {
+            get
+            {
+                return 15;
+            }
+        }
+
         public string[] Tabs
         {
             get
@@ -71,17 +79,16 @@ namespace RainbowEffect
             }
         }
 
-        public Item[] Items
+        public MiItem[] Items
         {
             get
             {
-                return new Item[] { new Item(ItemType.ToggleButton, "Moving", 0, 8, 8, new EventHandler(FastToggleClick)) };
+                return new MiItem[] { new MiItem(ItemType.ToggleButton, "Moving", 0, 8, 8, new EventHandler(FastToggleClick)) };
             }
         }
 
         private void FastToggleClick(object sender, EventArgs e)
         {
-            speed = (sender as MetroToggle).Checked ? 1 : 0;
         }
 
         public bool OnLoad()
@@ -94,15 +101,9 @@ namespace RainbowEffect
             return true;
         }
 
-        float position = 0;
-        float speed = 0;
-
-        public void LightingUpdate(ref CorsairKeyboard keyboard, EventArgs args)
+        public void LightingUpdate(CorsairKeyboard keyboard, EventArgs args)
         {
-            position += speed;
-            float start = position % 360f;
-            float end = (position - 1) % 360f;
-            keyboard.Brush = new LinearGradientBrush(new RainbowGradient(start, end));
+            keyboard.Brush = new LinearGradientBrush(new RainbowGradient(0, 360));
         }
     }
 }

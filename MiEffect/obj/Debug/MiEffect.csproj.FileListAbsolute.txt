@@ -1,0 +1,6 @@
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiEffect\bin\Debug\MiEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiEffect\bin\Debug\MiEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiEffect\bin\Debug\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiEffect\bin\Debug\CUE.NET.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiEffect\obj\Debug\MiEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiEffect\obj\Debug\MiEffect.pdb

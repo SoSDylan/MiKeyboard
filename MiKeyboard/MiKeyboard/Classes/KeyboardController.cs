@@ -8,6 +8,8 @@ using CUE.NET.Devices.Keyboard;
 using CUE.NET.Devices.Generic.Enums;
 using CUE.NET.Devices.Generic.EventArgs;
 using CUE.NET.Exceptions;
+using CUE.NET.Brushes;
+using System.Drawing;
 
 namespace MiKeyboard.Classes
 {
@@ -36,6 +38,8 @@ namespace MiKeyboard.Classes
         internal void Setup()
         {
             keyboard.UpdateMode = UpdateMode.Continuous;
+            keyboard.UpdateFrequency = 1f / main.effectController.effects[main.effectController.selectedEffect].UpdatesPerSecond;
+            keyboard.Brush = new SolidColorBrush(Color.Black);
         }
 
         private void UpdateKeyboard(EventArgs args)

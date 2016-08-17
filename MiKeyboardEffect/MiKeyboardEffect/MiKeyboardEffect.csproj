@@ -52,13 +52,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\IEffect\IEffect.csproj">
-      <Project>{7e64d899-296e-42a9-9041-79530b13ed81}</Project>
-      <Name>IEffect</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\..\MiEffect\MiEffect.csproj">
+      <Project>{1e49e15f-7739-430f-b8f6-bb812c2d1fb7}</Project>
+      <Name>MiEffect</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

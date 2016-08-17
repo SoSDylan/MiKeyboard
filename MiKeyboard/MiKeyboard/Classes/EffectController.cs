@@ -15,7 +15,7 @@ namespace MiKeyboard.Classes
     {
         Main main;
 
-        internal List<IEffect> effects = new List<IEffect>();
+        internal List<MiEffect> effects = new List<MiEffect>();
         internal int selectedEffect = 0;
 
         internal EffectController(Main main)
@@ -39,7 +39,7 @@ namespace MiKeyboard.Classes
             effects.ForEach(t => Console.WriteLine("Loaded " + t.Name + " " + t.Version + " by " + t.Author));
         }
 
-        internal void LoadEffect(String file)
+        internal void LoadEffect(string file)
         {
             if (!File.Exists(file) || !file.EndsWith(".dll", true, null))
                 return;
@@ -63,7 +63,7 @@ namespace MiKeyboard.Classes
                 //Assembly core = AppDomain.CurrentDomain.GetAssemblies().Single(x => x.GetName().Name.Equals("MiKeyboard"));
                 //for (int i = 0; i < core.GetTypes().Length; i++)
                 //    Console.WriteLine(core.GetTypes()[i].FullName);
-                Type type = typeof(IEffect);//core.GetType("MiKeyboard.Main");
+                Type type = typeof(MiEffect);//core.GetType("MiKeyboard.Main");
                 foreach (var t in types)
                     if (type.IsAssignableFrom((Type)t))
                     {
@@ -74,7 +74,7 @@ namespace MiKeyboard.Classes
                 if (effectInfo != null)
                 {
                     object o = Activator.CreateInstance(effectInfo);
-                    IEffect effect = (IEffect)o;
+                    MiEffect effect = (MiEffect)o;
                     effects.Add(effect);
                     effect.OnLoad();
                 }
@@ -99,7 +99,7 @@ namespace MiKeyboard.Classes
         {
             if (effects.Count > selectedEffect)
             {
-                effects[selectedEffect].LightingUpdate(ref main.keyboardController.keyboard, args);
+                effects[selectedEffect].LightingUpdate(main.keyboardController.keyboard, args);
             }
         }
     }

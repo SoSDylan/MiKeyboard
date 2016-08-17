@@ -28,9 +28,9 @@ namespace MiKeyboard
             keyboardController = new KeyboardController(this);
             effectController = new EffectController(this);
 
-            keyboardController.Setup();
             effectController.Setup();
-
+            keyboardController.Setup();
+            
             GotFocus += new EventHandler(FormGotFocus);
             cb_effects.SelectedIndexChanged += new EventHandler(cb_effects_SelectedIndexChanged);
 
@@ -80,7 +80,7 @@ namespace MiKeyboard
             if (effectController.selectedEffect < 0 || effectController.selectedEffect >= effectController.effects.Count)
                 return;
 
-            IEffect selectedEffect = effectController.effects[effectController.selectedEffect];
+            MiEffect selectedEffect = effectController.effects[effectController.selectedEffect];
             for (int i = 0; i < selectedEffect.Tabs.Length; i++)
             {
                 panel.TabPages.Add(selectedEffect.Tabs[i]);
@@ -88,7 +88,7 @@ namespace MiKeyboard
 
             for (int i = 0; i < selectedEffect.Items.Length; i++)
             {
-                Item item = selectedEffect.Items[i];
+                MiItem item = selectedEffect.Items[i];
                 switch (item.Type)
                 {
                     case ItemType.Button:
