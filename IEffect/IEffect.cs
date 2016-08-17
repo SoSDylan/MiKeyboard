@@ -18,6 +18,6 @@ namespace MiKeyboard
         bool OnLoad();
         bool OnUnload();
 
-        void LightingUpdate(ref CorsairKeyboard keyboard);
+        void LightingUpdate(ref CorsairKeyboard keyboard, EventArgs args);
     }
 }

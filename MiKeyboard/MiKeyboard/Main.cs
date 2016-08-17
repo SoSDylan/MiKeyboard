@@ -76,6 +76,9 @@ namespace MiKeyboard
         {
             ResetInterface();
 
+            if (effectController.selectedEffect < 0 || effectController.selectedEffect >= effectController.effects.Count)
+                return;
+
             IEffect selectedEffect = effectController.effects[effectController.selectedEffect];
             for (int i = 0; i < selectedEffect.Tabs.Length; i++)
             {

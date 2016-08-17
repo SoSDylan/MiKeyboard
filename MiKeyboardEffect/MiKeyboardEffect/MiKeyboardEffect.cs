@@ -98,7 +98,7 @@ namespace MiKeyboardEffect
             return true;
         }
 
-        public void LightingUpdate(ref CorsairKeyboard keyboard)
+        public void LightingUpdate(ref CorsairKeyboard keyboard, EventArgs args)
         {
             keyboard['A'].Led.Color = Color.Red;
             keyboard[CorsairKeyboardKeyId.B].Led.Color = Color.Green;

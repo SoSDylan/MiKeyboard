@@ -1,0 +1,6 @@
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Release\IEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Release\IEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Release\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\bin\Release\CUE.NET.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\obj\Release\IEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\IEffect\obj\Release\IEffect.pdb

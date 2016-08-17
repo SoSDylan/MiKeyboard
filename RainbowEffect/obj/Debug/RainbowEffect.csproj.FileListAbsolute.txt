@@ -1,0 +1,10 @@
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\obj\Debug\RainbowEffect.csprojResolveAssemblyReference.cache
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Debug\RainbowEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Debug\RainbowEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Debug\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Debug\IEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Debug\CUE.NET.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Debug\IEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\obj\Debug\RainbowEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\obj\Debug\RainbowEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\RainbowEffect\bin\Debug\MetroFramework.dll

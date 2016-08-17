@@ -45,6 +45,8 @@
             // 
             // cb_effects
             // 
+            this.cb_effects.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_effects.FormattingEnabled = true;
             this.cb_effects.ItemHeight = 23;
             this.cb_effects.Location = new System.Drawing.Point(168, 23);
@@ -55,6 +57,9 @@
             // 
             // panel
             // 
+            this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel.Controls.Add(this.metroTabPage1);
             this.panel.Location = new System.Drawing.Point(6, 58);
             this.panel.Name = "panel";
@@ -73,7 +78,7 @@
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(440, 173);
             this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "metroTabPage1";
+            this.metroTabPage1.Text = "Tab";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
@@ -117,6 +122,7 @@
             // 
             // metroButton1
             // 
+            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton1.BackgroundImage = global::MiKeyboard.Properties.Resources.folder;
             this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.metroButton1.Location = new System.Drawing.Point(367, 23);
@@ -134,6 +140,7 @@
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.cb_effects);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Resizable = false;

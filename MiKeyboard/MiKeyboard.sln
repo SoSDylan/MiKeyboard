@@ -5,12 +5,18 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiKeyboard", "MiKeyboard\MiKeyboard.csproj", "{508C8F67-E47B-44D9-A91E-20251861BF31}"
 	ProjectSection(ProjectDependencies) = postProject
+		{B5502218-F1D4-4139-8F3B-DA28EA3F70CA} = {B5502218-F1D4-4139-8F3B-DA28EA3F70CA}
 		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5} = {AAA9875C-D586-4E4F-BA45-5FC340BB50C5}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEffect", "..\IEffect\IEffect.csproj", "{7E64D899-296E-42A9-9041-79530B13ED81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiKeyboardEffect", "..\MiKeyboardEffect\MiKeyboardEffect\MiKeyboardEffect.csproj", "{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainbowEffect", "..\RainbowEffect\RainbowEffect.csproj", "{B5502218-F1D4-4139-8F3B-DA28EA3F70CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E64D899-296E-42A9-9041-79530B13ED81} = {7E64D899-296E-42A9-9041-79530B13ED81}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +36,10 @@ Global
 		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAA9875C-D586-4E4F-BA45-5FC340BB50C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5502218-F1D4-4139-8F3B-DA28EA3F70CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5502218-F1D4-4139-8F3B-DA28EA3F70CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5502218-F1D4-4139-8F3B-DA28EA3F70CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5502218-F1D4-4139-8F3B-DA28EA3F70CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

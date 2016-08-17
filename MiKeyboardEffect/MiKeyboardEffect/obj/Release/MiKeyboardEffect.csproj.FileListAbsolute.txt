@@ -1,0 +1,9 @@
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Release\MiKeyboardEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Release\MiKeyboardEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Release\CUE.NET.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Release\IEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Release\IEffect.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\bin\Release\CUE.NET.pdb
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\obj\Release\MiKeyboardEffect.csprojResolveAssemblyReference.cache
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\obj\Release\MiKeyboardEffect.dll
+F:\Users\Dylan\Documents\GitHub\MiKeyboard\MiKeyboardEffect\MiKeyboardEffect\obj\Release\MiKeyboardEffect.pdb

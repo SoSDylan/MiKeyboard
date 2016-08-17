@@ -94,11 +94,11 @@ namespace MiKeyboard.Classes
             }
         }
 
-        internal void UpdateKeyboard()
+        internal void UpdateKeyboard(EventArgs args)
         {
             if (effects.Count > selectedEffect)
             {
-                effects[selectedEffect].LightingUpdate(ref main.keyboardController.keyboard);
+                effects[selectedEffect].LightingUpdate(ref main.keyboardController.keyboard, args);
             }
         }
     }

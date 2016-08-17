@@ -30,7 +30,7 @@ namespace MiKeyboard.Classes
             if (keyboard == null)
                 throw new WrapperException("No keyboard found...");
 
-            keyboard.Updating += (sender, args) => UpdateKeyboard();
+            keyboard.Updating += (sender, args) => UpdateKeyboard(args);
         }
 
         internal void Setup()
@@ -38,9 +38,9 @@ namespace MiKeyboard.Classes
             keyboard.UpdateMode = UpdateMode.Continuous;
         }
 
-        private void UpdateKeyboard()
+        private void UpdateKeyboard(EventArgs args)
         {
-            main.effectController.UpdateKeyboard();
+            main.effectController.UpdateKeyboard(args);
             //keyboard.Update();
         }
     }
